@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
     var config = {
-        port:           process.env.PORT || 4000,
+        port:           process.env.PORT || 5000,
         publicDir:      __dirname + '/public',
         controllersDir: __dirname + '/src/controllers',
         viewsDir:       __dirname + '/src/views',
@@ -24,7 +24,7 @@ module.exports = function(app) {
             recipient:  'biuro.dobryksiegowy@gmail.com',
             subject:    'Zapytanie od klienta ze strony www'
         },
-        assetsVersion:  100,
+        assetsVersion:  101,
         pageTitle:      'Dobry Księgowy Marcin Bąbolewski sp. z o.o. - księgowość, rachunkowość - Mińsk Mazowiecki',
         pageKeywords:   'biuro rachunkowe, księgowość, biuro księgowe, księgowy, działalność gospodarcza, podatki, podatek, vat, optymalizacja podatkowa, zus, kadry, płace, rozliczenia roczne, zwrot vat, mińsk mazowiecki, mińsk, dobry księgowy',
         pageDescription:'Nasze biuro rachunkowe w Mińsku Mazowieckim oferuje kompleksową obsługę księgową i kadrowo-płacową firm. Pomagamy również przy zakładaniu działalności gospodarczej.',
