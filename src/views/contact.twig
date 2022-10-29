@@ -1,0 +1,58 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <section class="container">
+        <section class="row">
+            <article id="content" class="col-sm-8">
+                <section class="parallax" id="map" style="background-image: url('../img/parallax-map.jpg');">
+                </section>
+
+                <h2 class="title">Odwiedź nas lub skontaktuj się z nami</h2>
+
+                <p>
+                    Zapraszamy serdecznie do wizyty w naszym biurze lub nawiązania kontaktu drogą telefoniczną bądź mailową.
+                    Chętnie odpowiemy na wszystkie pytania i wyjaśnimy wątpliwości!
+                </p>
+            </article>
+
+            <aside id="sidebar" class="col-sm-4">
+                <section class="well" itemscope itemtype="http://data-vocabulary.org/Organization">
+                    <h2>Dane kontaktowe</h2>
+
+                    <address>
+                        <strong itemprop="name">Dobry Księgowy Marcin Bąbolewski sp. z o.o.</strong><br />
+                        <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                            <span itemprop="street-address">ul. Traugutta 24 lok. 2</span><br />
+                            05-300 <span itemprop="locality">Mińsk Mazowiecki</span>
+                        </span>
+                    </address>
+
+                    <p>
+                        Tel. Prezes:
+                        <b itemprop="tel">+48 668 495 514</b><br />
+                        Tel. biuro:
+                        <b itemprop="tel">+48 796 167 624</b><br /><br />
+                        E-mail: <b><a href="mailto:biuro.dobryksiegowy@gmail.com" itemprop="email">biuro.dobryksiegowy@gmail.com</a></b>
+                    </p>
+                </section>
+
+                <section class="well">
+                    <h2>Godziny pracy</h2>
+
+                    <p>
+                        Poniedziałek - Piątek: <b>8:00 - 16:00</b>
+                    </p>
+
+                    <p>
+                        Nasze biuro znajduje się na parterze nowego budynku w lokalu nr 2 przy ul. Traugutta 24 w
+                        <strong class="font-normal">Mińsku Mazowieckim</strong>.
+                    </p>
+
+                    <img class="office" src="../img/biuro_rachunkowe_minsk_mazowiecki.jpg" alt="Biuro Rachunkowe Mińsk Mazowiecki" width="320" height="177" />
+
+                    <img class="office" src="../img/dobry_ksiegowy_minsk_mazowiecki.jpg" alt="Dobry Księgowy Mińsk Mazowiecki" width="320" height="177" />
+                </section>
+            </aside>
+        </section>
+    </section>
+{% endblock %}

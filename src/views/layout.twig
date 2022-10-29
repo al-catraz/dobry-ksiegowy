@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="{{ config.pageKeywords }}" />
+    <meta name="description" content="{{ config.pageDescription }}" />
+    <meta property="og:title" content="{{ config.pageTitle }}" />
+    <meta property="og:description" content="{{ config.pageDescription }}" />
+    <meta property="og:type" content="{{ config.pageType }}" />
+    <meta property="og:url" content="{{ config.pageUrl }}" />
+    <meta property="og:image" content="{{ config.pageImage }}" />
+    <meta property="og:locale" content="{{ config.pageLocale }}" />
+    <meta property="og:site_name" content="{{ config.pageSiteName }}" />
+
+    <title>{{ config.pageTitle }}</title>
+
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+
+    {% block styles %}
+        <link rel="stylesheet" type="text/css" href="/css/style.css?v={{ config.assetsVersion }}" />
+    {% endblock %}
+</head>
+<body>
+    {% block header %}
+        {% include 'parts/header.part.twig' %}
+    {% endblock %}
+
+    {% block body %}
+    {% endblock %}
+
+    {% block footer %}
+        {% include 'parts/footer.part.twig' %}
+    {% endblock %}
+
+    {% block scripts %}
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap/collapse.js"></script>
+        <script src="/js/scripts.js?v={{ config.assetsVersion }}"></script>
+    {% endblock %}
+</body>
+</html>

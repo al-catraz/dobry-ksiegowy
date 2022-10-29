@@ -1,0 +1,32 @@
+<section class="well">
+    <h2>Jakiej pomocy potrzebujesz?</h2>
+
+    <ul>
+        <li>
+            Doradzimy Ci podczas <strong class="font-normal">zakładania firmy</strong>
+        </li>
+        <li>
+            Prowadzisz już <strong class="font-normal">własną działalność</strong>? Wesprzemy ją bieżącą obsługą
+        </li>
+        <li>
+            Nadrobimy zaległości i uporządkujemy Twoje dokumenty
+        </li>
+        <li>
+            Poprowadzimy <strong class="font-normal">sprawy kadrowe</strong>
+        </li>
+        <li>
+            Nie obawiaj się kontroli - pomożemy Ci ją przejść
+        </li>
+        <li>
+            Stresują cię wizyty w urzędach? <strong class="font-normal">Będziemy Cię reprezentować</strong>
+        </li>
+    </ul>
+
+    <section class="text-center">
+        {% if context == 'about' %}
+            <a class="btn btn-primary" href="{{ url('services') }}">Zobacz wszystkie usługi</a>
+        {% else %}
+            <a class="btn btn-primary" href="{{ url('about') }}">Poznaj nas bliżej</a>
+        {% endif %}
+    </section>
+</section>

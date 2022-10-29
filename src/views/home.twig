@@ -1,0 +1,101 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <section class="container">
+        <article id="content">
+            {% if 'now'|date('m') < 5 %}
+                <h2 class="top-info">
+                    <a href="{{ url('contact') }}">Prowadzimy rozliczenia roczne w Mińsku Mazowieckim i okolicach<br>masz czas do 30.04.{{ 'now'|date('Y') }} r.</a>
+                </h2>
+            {% endif %}
+
+            <section id="hero" class="parallax text-center" style="background-image: url('../img/parallax-home.jpg');">
+                <section id="hero-text">
+                    <hgroup>
+                        <h1>
+                            <a href="{{ url('services') }}">Profesjonalna obsługa księgowa</a>
+                        </h1>
+
+                        <h2>
+                            <a href="{{ url('services') }}">małych i średnich firm</a>
+                        </h2>
+                    </hgroup>
+
+                    <a class="btn btn-lg btn-default" href="{{ url('services') }}">Zobacz ofertę</a>
+                    <a class="btn btn-lg btn-primary" href="{{ url('contact') }}">Kontakt</a>
+                </section>
+            </section>
+
+            <section id="features" class="container-fluid">
+                <section class="container">
+                    <section class="row">
+                        <section class="col-md-4">
+                            <img src="/img/icon-partner.png" class="pull-left" alt="Dobry księgowy Mińsk Mazowiecki" width="60" height="60" />
+
+                            <section class="text">
+                                <h3>
+                                    <a href="{{ url('about') }}">Fachowa i kompleksowa pomoc</a>
+                                </h3>
+
+                                <p>Mamy wykwalifikowaną i doświadczoną kadrę, która zapewnia miłą obsługę</p>
+                            </section>
+                        </section>
+
+                        <section class="col-md-4">
+                            <img src="/img/icon-savings.png" class="pull-left" alt="Księga przychodów i rozchodów Mińsk Mazowiecki" width="60" height="60" />
+
+                            <section class="text">
+                                <h3>
+                                    <a href="{{ url('services') }}">Konkurencyjne ceny<br />usług</a>
+                                </h3>
+
+                                <p>Zapewniamy stałą, niską cenę oraz rabaty dla nowych firm</p>
+                            </section>
+                        </section>
+
+                        <section class="col-md-4">
+                            <img src="/img/icon-car.png" class="pull-left" alt="Rachunkowość Marcin Bąbolewski" width="60" height="60" />
+
+                            <section class="text">
+                                <h3>
+                                    <a href="{{ url('contact') }}">Dojazd do klienta<br />gratis</a>
+                                </h3>
+
+                                <p>Jesteśmy mobilni - sami odbieramy dokumenty na terenie Mińska Mazowieckiego i okolic</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section id="why-us" class="container-fluid">
+                <section class="row">
+                    <section class="col-md-12 text-center">
+                        <h3>Czym wyróżnia się nasze biuro rachunkowe na tle innych?</h3>
+                    </section>
+                </section>
+
+                <section class="row">
+                    <section class="col-md-4">
+                        <img src="/img/icon-user.png" class="pull-left" alt="Optymalizacja podatkowa Mińsk Mazowiecki" width="40" height="40" />
+                        <p>Współpracujemy z każdym klientem na partnerskich zasadach</p>
+                    </section>
+
+                    <section class="col-md-4">
+                        <img src="/img/icon-shield.png" class="pull-left" alt="Zwrot vat biuro rachunkowe Mińsk Mazowiecki" width="40" height="40" />
+                        <p>Posiadamy ubezpieczenie od odpowiedzialności cywilnej</p>
+                    </section>
+
+                    <section class="col-md-4">
+                        <img src="/img/icon-growth.png" class="pull-left" alt="KPiR, ZUS, rozliczenia roczne Mińsk Mazowiecki" width="40" height="40" />
+                        <p>Oferujemy pomoc na każdym etapie prowadzenia działalności</p>
+                    </section>
+                </section>
+            </section>
+
+            <section id="trust-us" class="text-center" >
+                <a class="btn btn-primary btn-hg" href="{{ url('contact') }}">Zaufaj specjalistom do spraw księgowości</a>
+            </section>
+        </article>
+    </section>
+{% endblock %}

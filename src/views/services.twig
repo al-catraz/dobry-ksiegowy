@@ -1,0 +1,61 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <section class="container">
+        <section class="row">
+            <article id="content" class="col-sm-8">
+                <section class="parallax" style="background-image: url('../img/parallax-services.jpg');">
+                </section>
+
+                <h2 class="title">W czym możemy Ci pomóc?</h2>
+
+                <p>
+                    <strong>
+                        Specjalizujemy się w kompleksowej obsłudze małych i średnich firm w zakresie usług księgowych.
+                        Prowadzimy zarówno pełną księgowość, jak i KPiR. Naszą pracę organizujemy tak, aby nasz klient
+                        nie musiał osobiście kontaktować się z Urzędem Skarbowym czy ZUS.
+                    </strong>
+                </p>
+
+                <p>
+                    Klientom indywidualnym, którzy nie prowadzą <strong>działalności gospodarczej</strong>, oferujemy usługi
+                    <strong>rozliczenia rocznego</strong> oraz <strong>rozliczenia zwrotu podatku VAT na materiały budowlane</strong> w przypadku
+                    remontu lub budowy.
+                </p>
+
+                <p>
+                    Nowo powstającym podmiotom doradzimy w wyborze właściwej <strong>formy opodatkowania</strong> oraz
+                    pomożemy w wypełnieniu dokumentów niezbędnych do <strong>rejestracji firmy</strong> i <strong>pozyskania dotacji na
+                    rozpoczęcie działalności gospodarczej</strong>.
+                </p>
+
+                <h3 class="title">Nasze specjalizacje</h3>
+
+                <ul>
+                    <li>prowadzenie księgi przychodów i rozchodów</li>
+                    <li>prowadzenie ewidencji i rozliczeń VAT</li>
+                    <li>sporządzanie rozliczeń podatkowych PIT i VAT</li>
+                    <li>prowadzenie ewidencji środków trwałych, wartości niematerialnych i prawnych oraz wyposażenia</li>
+                    <li>prowadzenie ewidencji przychodów dla celów zryczałtowanego podatku dochodowego</li>
+                    <li>prowadzenie rejestrów sprzedaży i zakupów dla celów podatku od towarów i usług</li>
+                    <li>sporządzanie sprawozdań do GUS</li>
+                    <li>sporządzanie sprawozdań finansowych</li>
+                    <li>sporządzanie zeznań rocznych</li>
+                    <li>prowadzenie kartotek pracowniczych</li>
+                    <li>przygotowywanie dokumentacji kadrowej</li>
+                    <li>sporządzanie list płac</li>
+                    <li>sporządzanie deklaracji ZUS</li>
+                    <li>reprezentowanie podatnika w ZUS i US (zgłoszenia, skladanie deklaracji, aktualizacje)</li>
+                    <li>wyprowadzanie zaległości</li>
+                    <li>pomoc w przypadku kontroli</li>
+                </ul>
+            </article>
+
+            <aside id="sidebar" class="col-sm-4">
+                {% include 'parts/pricing.part.twig' %}
+
+                {% include 'parts/services.part.twig' with { context: 'services' } %}
+            </aside>
+        </section>
+    </section>
+{% endblock %}

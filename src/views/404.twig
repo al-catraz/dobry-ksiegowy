@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <section class="container">
+        <article id="content">
+            <img class="pull-right" src="../img/404.jpg" width="400" height="323" />
+
+            <h2 class="title">Strona o takim adresie nie istnieje :(</h2>
+
+            <h3 class="title">
+                Może chciałbyś odwiedzić naszą <a href="{{ url('home') }}">stronę główną</a>?<br />
+                Jeśli nie, to na pewno znajdziesz coś dla siebie w <a href="{{ url('services') }}">naszej ofercie</a>.
+            </h3>
+        </article>
+    </section>
+{% endblock %}

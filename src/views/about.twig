@@ -1,0 +1,60 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <section class="container">
+        <section class="row">
+            <article id="content" class="col-sm-8">
+                <section class="parallax" style="background-image: url('../img/parallax-about.jpg');">
+                </section>
+
+                <h2 class="title">Rozumiemy potrzeby klientów</h2>
+
+                <p>
+                    <strong>
+                        Nasze biuro rachunkowe powstało w 2011 roku. Od początku zapewniamy
+                        kompleksową obsługę finansowo-księgową oraz kadrowo-płacową dla małych i średnich firm.
+                        Kadrze zarządzającej oferujemy łatwy dostęp do danych finansowych oraz kadrowo-płacowych.
+                    </strong>
+                </p>
+
+                <p>
+                    Dbamy o budowanie <strong>długotrwałych relacji z klientami</strong>. Rozumiejąc ich potrzeby, staramy się
+                    zapewnić możliwie najszerszy zakres usług.
+                </p>
+
+                <h3 class="title">Co nas wyróżnia?</h3>
+
+                <p>
+                    Jesteśmy firmą z <strong>rodzinnymi tradycjami, kilkuletnim doświadczeniem i nowoczesnym podejściem</strong>.
+                    Śledzimy aktualności, publikacje branżowe, korzystamy z wysokiej klasy sprzętu i
+                    oprogramowania. Dzięki zaawansowanym procedurom archiwizacji baz danych <strong>bezpiecznie i
+                    szybko</strong> realizujemy powierzone nam zadania.
+                </p>
+
+                <p>
+                    Zachowujemy przy tym <strong>elastyczność i otwartość</strong> na niestandardowe formy współpracy.
+                    Zapewniamy między innymi <strong>obsługę zdalną</strong> oraz <strong>dojazd do klienta na terenie Mińska
+                    Mazowieckiego i okolic</strong>.
+                </p>
+
+                <h3 class="title">Bezpieczeństwo i zaufanie</h3>
+
+                <p>
+                    Doświadczenie w kontaktach z urzędami i instytucjami państwowymi pozwala nam profesjonalnie
+                    <strong>reprezentować klientów</strong> we wszelkiego rodzaju postępowaniach i sprawach urzędowych.
+                </p>
+
+                <p>
+                    Zapewniamy <strong>bezpieczeństwo i poufność informacji</strong> na każdym etapie współpracy. Nasze biuro
+                    posiada <strong>ubezpieczenie od odpowiedzialności cywilnej OC</strong>.
+                </p>
+            </article>
+
+            <aside id="sidebar" class="col-sm-4">
+                {% include 'parts/clients.part.twig' %}
+
+                {% include 'parts/services.part.twig' with { context: 'about' } %}
+            </aside>
+        </section>
+    </section>
+{% endblock %}

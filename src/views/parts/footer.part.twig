@@ -1,0 +1,81 @@
+<footer id="footer">
+    <section id="bottom-links">
+        <section class="container">
+            <section class="row">
+                <section class="col-md-6">
+                    <nav id="mostly-searched">
+                        <h4>Najczęściej szukane</h4>
+
+                        <ul class="list-horizontal">
+                            <li>
+                                <a href="{{ url('contact_seo') }}">Nadzór księgowy</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('about_seo') }}">Księga przychodów i rozchodów</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('services_seo') }}">Księgowość</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('about') }}">Kadry i płace</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('contact') }}">ZUS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="col-md-6">
+                    <section id="contact-us" itemscope itemtype="http://data-vocabulary.org/Organization">
+                        <h4>Skontaktuj się z nami</h4>
+
+                        <address class="pull-left">
+                            <strong itemprop="name">Dobry Księgowy Marcin Bąbolewski sp. z o.o.</strong><br />
+                            <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                                <span itemprop="street-address">ul. Traugutta 24 lok. 2</span><br />
+                                05-300 <span itemprop="locality">Mińsk Mazowiecki</span>
+                            </span>
+                        </address>
+
+                        <p id="phones" class="pull-left">
+                            Tel. Prezes: <span itemprop="tel">+48 668 495 514</span><br />
+                            Tel. biuro: <span itemprop="tel">+48 796 167 624</span><br />
+                            E-mail: <a href="mailto:biuro.dobryksiegowy@gmail.com" itemprop="email">biuro.dobryksiegowy@gmail.com</a>
+                        </p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <section id="copyrights" class="container">
+        <section class="row">
+            <p class="pull-left">
+                &copy; 2011 - {{ 'now'|date('Y') }} Dobry Księgowy Marcin Bąbolewski sp. z o.o.
+                <br class="break">
+                Wszelkie prawa zastrzeżone
+            </p>
+
+            <nav class="pull-right">
+                <ul id="bottom-menu" class="list-unstyled list-horizontal">
+                    <li>
+                        <a href="{{ url('home') }}">Start</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('about') }}">O firmie</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('services') }}">Usługi księgowe</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('sitemap') }}">Mapa strony</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('contact') }}">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </section>
+</footer>
