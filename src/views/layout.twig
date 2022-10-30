@@ -23,7 +23,7 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css?v={{ config.assetsVersion }}" />
     {% endblock %}
 </head>
-<body>
+<body class="render">
     {% block header %}
         {% include 'parts/header.part.twig' %}
     {% endblock %}
@@ -40,6 +40,5 @@
         <script src="/js/bootstrap/collapse.js"></script>
         <script src="/js/scripts.js?v={{ config.assetsVersion }}"></script>
     {% endblock %}
-    <!-- Render -->
 </body>
 </html>
