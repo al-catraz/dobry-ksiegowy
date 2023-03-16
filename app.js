@@ -19,3 +19,5 @@ app.use(bodyParser.urlencoded(config.bodyParserConfig));
 app.listen(config.port);
 
 dispatcher.dispatch(app, fs);
+
+console.log("\nApplication started");
