@@ -38,4 +38,5 @@ module.exports = function(app) {
     app.locals.config = config;
 
     return config;
+
 }
