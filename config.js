@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
     var config = {
-        port:           process.env.PORT || 5000,
+        port:           process.env.PORT || 10000,
         publicDir:      __dirname + '/public',
         controllersDir: __dirname + '/src/controllers',
         viewsDir:       __dirname + '/src/views',
