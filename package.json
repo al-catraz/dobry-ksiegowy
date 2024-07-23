@@ -21,8 +21,5 @@
     "less-middleware": "^1.0.4",
     "sendgrid": "^5.1.2",
     "twig": "0.7.2"
-  },
-  "engines": {
-    "node": ">=14"
   }
 }
