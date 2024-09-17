@@ -20,8 +20,8 @@ module.exports = function(app) {
         },
         sendgridConfig: {
             key:        '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',
-            sender:     'biuro.dobryksiegowy@gmail.com',
-            recipient:  'biuro.dobryksiegowy@gmail.com',
+            sender:     'biuro@dobry-ksiegowy.com',
+            recipient:  'biuro@dobry-ksiegowy.com',
             subject:    'Zapytanie od klienta ze strony www'
         },
         assetsVersion:  101,
